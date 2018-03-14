@@ -31,9 +31,14 @@ export class CreateEmployeeComponent implements OnInit {
     { id: 4, name: 'Payroll' }
   ];
   
-
+  previewPhoto = false;
   saveEmployee(employeeForm: NgForm):void {
     console.log(employeeForm.value);
+  }
+
+  togglePhotoPreview():void {
+    this.previewPhoto = !this.previewPhoto;
+
   }
 
 }
