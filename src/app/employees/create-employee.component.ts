@@ -22,7 +22,7 @@ export class CreateEmployeeComponent implements OnInit {
   // gender:string = "female";
   //contactPreference='email';
   //isActive = 'true';
-  //department = "3";
+  department = "-1";
 
   departments:Department[] = [
     { id: 1, name: 'Help Desk' },
