@@ -6,11 +6,11 @@
       <h3 class="panel-title">Create Employee</h3>
     </div>
     <div class = "panel-body">
-      <div class="form-group" [class.has-error]="fullNameControl.invalid && fullNameControl.touched" [class.has-success]="fullNameControl.valid">
-          <label for="fullName" class="control-label">Full Name</label>
-          <input required id="fullName" type="text" class="form-control"
-                name="fullName" [(ngModel)]="fullName" #fullNameControl="ngModel">
-                <span class="help-block" *ngIf = "fullNameControl.invalid && fullNameControl.touched">
+      <div class="form-group" [class.has-error]="nameControl.invalid && nameControl.touched" [class.has-success]="nameControl.valid">
+          <label for="name" class="control-label">Full Name</label>
+          <input required id="name" type="text" class="form-control"
+                name="name" [(ngModel)]="name" #nameControl="ngModel">
+                <span class="help-block" *ngIf = "nameControl.invalid && nameControl.touched">
                   Full Name is required.
                 </span>
       </div>
